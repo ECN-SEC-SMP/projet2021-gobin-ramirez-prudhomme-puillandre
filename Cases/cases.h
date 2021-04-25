@@ -3,12 +3,16 @@
 
 #include <iostream>
 #include <string>
+<<<<<<< HEAD
 using namespace std;
+=======
+>>>>>>> origin/master
 
 //creation de la classe mere cases
 class cases
 {
   public:
+<<<<<<< HEAD
   //constructeur
   cases(string nom);
 
@@ -20,6 +24,13 @@ class cases
   
   protected:
   string nom;
+=======
+  cases(string nom, int position);
+  
+  protected:
+  string nom;
+  int position;
+>>>>>>> origin/master
 };
 
 #endif

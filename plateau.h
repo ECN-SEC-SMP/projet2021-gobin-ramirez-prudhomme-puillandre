@@ -3,11 +3,15 @@
 
 #include <iostream>
 #include <string>
+<<<<<<< HEAD
 #include <vector>
+=======
+>>>>>>> origin/master
 using namespace std;
 
 #include "joueur.h"
 #include "Cases/cases.h" 
+<<<<<<< HEAD
 #include "Cases/quartier.h"
 #include "Cases/nonAchetable.h"
 #include "Cases/gare.h"
@@ -29,6 +33,21 @@ public:
   bool finDePartie();
 
   int nbGare (joueur);
+=======
+#include "quartier.h"
+
+class plateau{
+private:
+  cases casesDuPlateau[];
+  joueur joueursEnVie[];
+public:
+  void initPlateau();
+  void tourDejeu();
+  void affichagePlateau();
+  bool finDepartie();
+
+  int nbGares (joueur);
+>>>>>>> origin/master
   
   int getDie();
   

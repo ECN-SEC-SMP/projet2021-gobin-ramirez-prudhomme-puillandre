@@ -1,2 +1,6 @@
 language = "cpp"
+<<<<<<< HEAD
 run = "make && ./main.out"
+=======
+run = "make"
+>>>>>>> origin/master

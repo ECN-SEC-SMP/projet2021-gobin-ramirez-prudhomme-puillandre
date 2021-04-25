@@ -120,4 +120,8 @@ void plateau :: initJoueur(int nombre = 4)
     string J = ("J" + to_string(i));
     this->joueursEnVie.push_back(new joueur(J));
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master

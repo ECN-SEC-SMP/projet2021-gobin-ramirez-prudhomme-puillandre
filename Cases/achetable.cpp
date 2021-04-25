@@ -1,13 +1,23 @@
+<<<<<<< HEAD
 #include "achetable.h"
 
 //constructeur
 achetable::achetable(string _nom, int position, int prix_achat): cases(_nom)
 {
   this->position = position;
+=======
+#include <iostream>
+#include "achetable.h"
+using namespace std;
+
+achetable::achetable(string _nom, int _position, int prix_achat): cases(_nom, _position)
+{
+>>>>>>> origin/master
   this->prix_achat = prix_achat;
   this->proprietaire = nullptr;
 }
 
+<<<<<<< HEAD
 //fonction
 //Si la case n'a pas de propriétaire et le joueur assez d'argent, le propriétaire de la case devient le joueur
 void achetable::acheter(joueur *J)
@@ -45,4 +55,12 @@ ostream& operator<<(ostream& os, const achetable& ach)
   else
     os << ach.nom << " (cout : " << ach.prix_achat << " ) proprietaire : " << ach.proprietaire->getNom();
   return os;
+=======
+void achetable::acheter(joueur *J)
+{
+  if(J->achat(this))
+  {
+    this->proprietaire = J;
+  }
+>>>>>>> origin/master
 }
