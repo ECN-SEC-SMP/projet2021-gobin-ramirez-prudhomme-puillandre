@@ -2,12 +2,10 @@
 
 plateau::plateau(int nbJoueur)
 {
-  //plateau::initPlateau();
+  plateau::initPlateau();
   plateau::initJoueur(nbJoueur);
 }
 
-
-/*
 void plateau :: initPlateau()
 {
   this->casesDuPlateau[0] = new caseDepart("Case Départ");
@@ -24,7 +22,7 @@ void plateau :: initPlateau()
   this->casesDuPlateau[11] = new quartier("Boulevard de la Villette",7,140);
   this->casesDuPlateau[12] = new compagnie("Compagnie de distribution d'électricité",8,150);
   this->casesDuPlateau[13] = new quartier("Avenue de Neuilly",9,140);
-  this->casesDuPlateau[14] = new quartier("Rue de Paradis",10,160)
+  this->casesDuPlateau[14] = new quartier("Rue de Paradis",10,160);
   this->casesDuPlateau[15] = new gare("Gare de Lyon",11,200);
   this->casesDuPlateau[16] = new quartier("Avenue de Mozart",12,180);
   this->casesDuPlateau[17] = new nonAchetable("Caisse de communauté");
@@ -40,7 +38,7 @@ void plateau :: initPlateau()
   this->casesDuPlateau[27] = new quartier("Place de la Bourse",20,260);
   this->casesDuPlateau[28] = new compagnie("Compagnie de distribution des eaux",21,150);
   this->casesDuPlateau[29] = new quartier("Rue La Fayette",22,280);
-  this->casesDuPlateau[30] = new nonAchetable("Allez en prison !!!!")
+  this->casesDuPlateau[30] = new nonAchetable("Allez en prison !!!!");
   this->casesDuPlateau[31] = new quartier("Avenue de Breteuil",23,300);
   this->casesDuPlateau[32] = new quartier("Avenue Foch",24,300);
   this->casesDuPlateau[33] = new nonAchetable("Caisse de communauté");
@@ -51,8 +49,7 @@ void plateau :: initPlateau()
   this->casesDuPlateau[38] = new nonAchetable("Taxe de luxe");
   this->casesDuPlateau[39] = new quartier("Rue de la Paix",28,400);
 }
-*/
-/*
+
 void plateau :: tourDeJeu(joueur j) {
 
   int avancementDe = this->getDie();
@@ -71,7 +68,6 @@ void plateau :: tourDeJeu(joueur j) {
 
   }
 }
-*/
 
 /*
 
